@@ -1,0 +1,25 @@
+data:
+  n_vehicles: 40
+  seconds_per_vehicle: 1800
+  output_path: data/fleet_telemetry.csv
+
+pipeline:
+  spark_partitions: 8
+  output_dir: output
+
+models:
+  archetype:
+    n_estimators: 100
+    random_state: 42
+  road_surface:
+    n_estimators: 80
+    random_state: 42
+  driving_style:
+    n_estimators: 100
+    random_state: 42
+
+thresholds:
+  hard_brake_g: 3.0
+  harsh_accel_ms2: 2.5
+  high_vibration_g: 2.0
+  high_speed_kmh: 100
