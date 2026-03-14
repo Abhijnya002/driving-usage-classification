@@ -226,9 +226,3 @@ offroad_explorer                3.87            1.54
 | Serialization | joblib, PyArrow (Parquet) |
 | Query layer | Spark SQL |
 | Config | PyYAML |
-
----
-
-## License
-
-MIT
